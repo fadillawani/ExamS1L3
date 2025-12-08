@@ -33,18 +33,30 @@ public class Commande {
         this.isPaid = false;
         this.statut = StatutCommande.EN_ATTENTE;
     }
+    public Commande() {
+    }
+
+
     public long getId() { return id; }
+    public void setId(long id) { this.id = id; }
     public User getClient() { return client; }
+    public void setClient(User client) { this.client = client; }
     public String getAdresse() { return adresse; }
+    public void setAdresse(String adresse) { this.adresse = adresse; }
     public Quartier getQuartier() { return quartier; }
+    public void setQuartier(Quartier quartier) { this.quartier = quartier; }
     public double getMontantHorsLivraison() { return montantHorsLivraison;
     }
+    public void setMontantHorsLivraison(double montantHorsLivraison) { this.montantHorsLivraison = montantHorsLivraison; }
+    public void setMontantTotal(double montantTotal) { this.montantTotal = montantTotal; }
     public double getMontantTotal() { return montantTotal; }
     public LocalDateTime getCreatedAt() { return createdAt; }
     public LocalDateTime getUpdatedAt() { return updatedAt; }
     public void setUpdatedAt(LocalDateTime updatedAt) { this.updatedAt = updatedAt; }
     public boolean isPaid() { return isPaid; }
+    public void setPaid(boolean paid) { isPaid = paid; }
     public StatutCommande getStatut() { return statut; }
+    
     public void setStatut(StatutCommande statut) { this.statut = statut; }
     public TypeRetrait getTypeRetrait() { return typeRetrait; }
     public void setTypeRetrait(TypeRetrait typeRetrait) { this.typeRetrait = typeRetrait; }

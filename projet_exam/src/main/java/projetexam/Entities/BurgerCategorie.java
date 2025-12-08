@@ -4,6 +4,8 @@ public class BurgerCategorie {
     private int id;
     private String nom;
 
+    
+
     public BurgerCategorie(int id, String nom) {
         this.id = id;
         this.nom = nom;

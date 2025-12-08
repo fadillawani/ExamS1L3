@@ -17,13 +17,23 @@ public class Complement {
         this.typeComplement = typeComplement;
         this.isArchived = false;
     }
+    
+    public Complement() {
+    }
 
     public long getId() { return id; }
+    public void setId(int id ) { this.id = id; }
     public String getImageUrl() { return imageUrl; }
-    public boolean isArchived() { return isArchived; }
+    public void setImageUrl(String imageUrl) { this.imageUrl = imageUrl; }
+    public boolean getIsArchived() { return isArchived; }
+    
+    public void setIsArchived(boolean isArchived) { this.isArchived = isArchived; }
     public TypeComplement getTypeComplement() { return typeComplement; }
+    public void setTypeComplement(TypeComplement typeComplement) { this.typeComplement = typeComplement; }
     public String getLibelle() { return libelle; }
+    public void setLibelle(String libelle) { this.libelle = libelle; }
     public double getPrix() { return prix; }
+    public void setPrix(double prix) { this.prix = prix; }
 
     @Override
     public String toString() { return libelle + " - " + prix + " FCFA"; }

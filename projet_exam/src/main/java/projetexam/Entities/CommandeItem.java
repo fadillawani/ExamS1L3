@@ -20,10 +20,18 @@ public class CommandeItem {
         else if (menu != null) prixTotal = menu.getPrix() * quantite;
         else if (complement != null) prixTotal = complement.getPrix() * quantite;
     }
+    
+    public CommandeItem() {
+    }
+
     public long getId() { return id; }
+    public void setId(long id) { this.id = id; }
     public Burger getBurger() { return burger; }
+    public void setBurger(Burger burger) { this.burger = burger; }
     public Menu getMenu() { return menu; }
+    public void setMenu(Menu menu) { this.menu = menu; }
     public Complement getComplement() { return complement; }
+    public void setComplement(Complement complement) { this.complement = complement; }
     public double getPrixTotal() { return prixTotal; }
     public int getQuantite() { return quantite; }
 
